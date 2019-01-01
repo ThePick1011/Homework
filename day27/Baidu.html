@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百度一下，你就知道</title>
+    <style>
+        #u1{
+            color: black;
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin: 19px 0 5px;
+            padding: 0 10px 0 0;
+        }
+        #logo{
+
+            width: 981.6px;
+            height:131.4px;
+            position: absolute;
+            top: 91px;
+            left: 640px;
+
+        }
+        #text{
+            width: 536px;
+            height: 28px;
+        }
+        #submit{
+            position: absolute;
+            top: 260px;
+            left: 460px;
+
+
+        }
+        #submitbutton{
+            width: 100px;
+            height: 36px;
+            color: #fff;
+            font-size: 15px;
+            letter-spacing: 1px;
+            background: #3385ff;
+        }
+        #morebutton{
+            color: #fff;
+            background: #38f
+        }
+
+        #moretext{
+            position: absolute;
+            top: 38px;
+            right: 9px;
+            width: 42.66px;
+            height: 600px;
+            background-color:skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div id = "u1">
+        <a href="//www.baidu.com/s?rtt=1&bsst=1&cl=2&tn=news&word=">资讯</a>
+        <a href="http://tieba.baidu.com/f?kw=&fr=wwwt">贴吧</a>
+        <a href="http://zhidao.baidu.com/q?ct=17&pn=0&tn=ikaslist&rn=10&word=&fr=wwwt" >知道</a>
+        <a href="http://music.taihe.com/search?fr=ps&ie=utf-8&key=">音乐</a>
+        <a href="http://image.baidu.com/search/index?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&word=" >图片</a>
+        <a href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=25&ie=utf-8&word=" >视频</a>
+        <a href="http://map.baidu.com/m?word=&fr=ps01000"  > 地图</a>
+        <a href="http://wenku.baidu.com/search?word=&lm=0&od=0&ie=utf-8" >文库</a>
+        <a href="//www.baidu.com/more/"><input type="button" value="更多" id="morebutton"></a>
+    </div>
+    <div id="more">
+
+    </div>
+
+    <div id = "logo">
+        <img src="logo.gif" width="270" height="129" >
+    </div>
+    <div id = "submit">
+        <input type="text" id = "text"><input type="submit" value="百度一下" id="submitbutton">
+    </div>
+    <div id="moretext" style="display: none;">
+
+    </div>
+    <script type="text/javascript">
+        var oA = document.getElementById("morebutton");
+        var oB = document.getElementById("moretext");
+
+        oA.onmouseover = function ()
+        {
+            oB.style.display = 'block';
+        }
+
+        oA.onmouseout = function ()
+        {
+            oB.style.display = 'none';
+        }
+
+        oB.onmouseover = function ()
+        {
+            this.style.display = 'block';
+        }
+
+        oB.onmouseout = function ()
+        {
+            this.style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
